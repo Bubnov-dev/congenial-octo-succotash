@@ -1,0 +1,199 @@
+@import "base.sass"
+@import "variables.sass"
+
+.short-login
+    width: 365px
+    max-width: 100%
+    height: fit-content
+    place-self: center
+
+    .title
+        margin-top: 44px
+        margin-bottom: 20px
+        &-desc
+            margin-top: 15px
+            margin-bottom: 30px
+
+    .btn, .input-field
+        width: 100%
+
+    &__wrapper
+        display: grid
+        min-height: 90vh
+
+    &__footer
+        border-top: 1px solid $grey
+        margin-top: 30px
+        padding-top: 28px
+        text-align: center
+        @include fr14
+
+        &-item
+            margin-bottom: 21px
+
+.reg-navigate
+    display: flex
+    gap: 60px
+    align-items: center
+    margin-bottom: 23px
+    &__step
+        color: $primary
+        @include fr14
+    &__circles
+        display: flex
+        align-items: center
+        gap: 15px
+
+    &__circle
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        flex-shrink: 0
+        background: $grey
+        &--active
+            background: $primary
+
+.reg
+
+    .title
+        margin-bottom: 36px
+        &-desc
+            margin-top: 4px
+
+    .input-field
+        max-width: 570px
+        margin-bottom: 20px
+
+    .btn-primary
+        width: 100%
+        max-width: 570px
+
+.representation
+    box-shadow: 0px 0px 25px rgba(202, 221, 244, 0.4)
+    border-radius: 15px
+    padding: 25px 22px
+    background: white
+    max-width: 570px
+
+    margin-top: 41px
+
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__delete
+        cursor: pointer
+
+    &__title
+        //styleName: Headers / H2;
+        font-family: Roboto
+        font-size: 24px
+        font-weight: 500
+        line-height: 30px
+        letter-spacing: 0em
+        text-align: left
+
+.schedule-popup
+    max-width: 680px !important
+    width: 90vw
+    box-sizing: content-box !important
+    padding: 35px 30px
+    overflow: visible !important
+    &__header
+        // display: flex
+        justify-content: space-between
+        margin-bottom: 50px
+
+    &__title
+        //styleName: Headers / H2;
+        font-family: Roboto
+        font-size: 24px
+        font-weight: 500
+        line-height: 30px
+        letter-spacing: 0em
+        text-align: left
+        margin-bottom: 5px
+
+    &__desc
+        //styleName: Label / Normal;
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        letter-spacing: 0em
+        text-align: left
+        color: $grey-blue
+
+    &__day
+        display: grid
+        grid-template-columns: 1fr 1fr 2fr
+        align-items: center
+
+        &-name
+            //styleName: Headers / h4;
+            font-family: Roboto
+            font-size: 16px
+            font-weight: 500
+            line-height: 20px
+            letter-spacing: 0em
+            text-align: left
+
+    &__time
+        display: flex
+        gap: 10px
+        align-items: center
+        //styleName: Label / Normal;
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        letter-spacing: 0em
+        text-align: left
+
+    .choices__inner
+        height: 45px
+        background: $disabled
+        border: none !important
+        display: grid !important
+        align-items: center !important
+        padding-top: 2px !important
+    .choices__list--dropdown
+        border: none !important
+    .choices__item
+        padding-right: 10px !important
+
+.reg-success
+    width: 90vw
+    max-width: 520px
+    text-align: center
+    @include vertical
+    place-items: center
+
+    &__title
+        font-family: Roboto
+        font-size: 36px
+        font-weight: 500
+        line-height: 40px
+        letter-spacing: 0em
+        text-align: center
+
+        margin-top: 20px
+        margin-bottom: 28px
+
+    &__desc
+        font-family: "Century Gothic"x
+        font-size: 16px
+        font-weight: 400
+        line-height: 25px
+        letter-spacing: 0em
+        text-align: center
+        color: $grey-blue
+        max-width: 440px
+
+        margin-bottom: 20px
+
+    &-wrapper
+        display: grid
+        place-items: center
+        min-height: 65vh
